@@ -21,3 +21,8 @@ publishBranch: main
 minimumReleaseAge: 10080
 blockExoticSubdeps: true
 strictDepBuilds: true
+minimumReleaseAgeStrict: true
+ignoreScripts: true
+minimumReleaseAgeIgnoreMissingTime: false
+trustLockfile: false
+optimisticRepeatInstall: false

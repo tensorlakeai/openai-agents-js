@@ -69,11 +69,11 @@
     "changeset:assign-milestone": "node .agents/skills/changeset-validation/scripts/changeset-assign-milestone.mjs",
     "ci:publish": "pnpm publish -r --no-git-checks --access public",
     "bump-version": "changeset version && pnpm -F @openai/* prebuild",
-    "prepare": "husky",
     "clear:deps": "rm -rf node_modules && pnpm -r exec rm -rf node_modules",
     "local-npm:reset": "rm -rf .cache/verdaccio/storage",
     "local-npm:start": "verdaccio --config verdaccio-config.yml",
-    "local-npm:publish": "pnpm -r publish --registry http://localhost:4873 --force --no-git-checks"
+    "local-npm:publish": "pnpm -r publish --registry http://localhost:4873 --force --no-git-checks",
+    "setup:git-hooks": "husky"
   },
   "devDependencies": {
     "@changesets/cli": "^2.31.0",
@@ -98,5 +98,5 @@
     "verdaccio": "^6.7.1",
     "vitest": "^3.2.4"
   },
-  "packageManager": "pnpm@11.0.9+sha512.34ce82e6780233cf9cad8685029a8f81d2e06196c5a9bad98879f7424940c6817c4e4524fb7d38b8553ceed48b9758b8ebaf1abd3600c232c4c8cf7366086f38"
+  "packageManager": "pnpm@11.28.5"
 }
